@@ -1,0 +1,7 @@
+{
+    "WSL":{
+        "error":"[error 2147942402 (0x80070002) when launching `ubuntu.exe']",
+        "solution":"Solved by adding %USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps to PATH",
+        "link":"https://stackoverflow.com/a/73324487"
+    }
+}
