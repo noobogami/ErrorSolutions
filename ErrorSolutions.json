@@ -1,7 +1,20 @@
 {
-    "WSL":{
-        "error":"[error 2147942402 (0x80070002) when launching `ubuntu.exe']",
-        "solution":"Solved by adding %USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps to PATH",
-        "link":"https://stackoverflow.com/a/73324487"
+    "wsl": {
+        "errors": [
+            {
+                "message": "[error 2147942402 (0x80070002) when launching `ubuntu.exe']",
+                "solution": "Solved by adding %USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps to PATH",
+                "link": "https://stackoverflow.com/a/73324487"
+            }
+        ]
+    },
+    "git": {
+        "errors":[
+            {
+                "message": "error: src refspec master does not match any",
+                "moreInfo": "error: failed to push some refs to 'https://github.com/noobogami/ErrorSolutions'",
+                "solution": "just perform git add and add some file and commit them and try again"
+            }
+        ]
     }
 }
