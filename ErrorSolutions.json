@@ -19,5 +19,14 @@
                 "solution": "just perform git add and add some file and commit them and try again"
             }
         ]
+    },
+    "android": {
+        "errors": [
+            {
+                "message": "DllNotFoundException: Unable to load DLL 'FirebaseCppApp-10_3_0'",
+                "moreInfo": "error Unity DllNotFoundException: Unable to load DLL 'FirebaseCppApp-10_3_0'. Tried the load the following dynamic libraries: Unable to load dynamic library 'FirebaseCppApp-10_3_0' because of 'Failed to open the requested dynamic library (0x06000000) dlerror() = dlopen failed: library \"FirebaseCppApp-10_3_0\" not found",
+                "solution": "resolve android dependencies"
+            }
+        ]
     }
 }
