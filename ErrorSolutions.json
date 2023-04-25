@@ -38,5 +38,13 @@
                 "solutions": ["add assembly deffinition file to root of package folder"]
             }
         ]
+    },
+    "C#": {
+        "errors": [
+            {
+                "message": "System.InvalidOperationException: Collection was modified; enumeration operation may not execute.",
+                "solutions": ["you are modifying a collection in foreach (removing an item in foreach on list of items). use \".ToList()\" on foreach definition part : \n`foreach (var item in items.ToList())`"]
+            }
+        ]
     }
 }
