@@ -30,7 +30,14 @@
         ]
     },
     "unity": {
-        "errors": [],
+        "errors": [
+            {
+                "message": "The type 'Task' exists in both 'Unity.Tasks, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' and 'netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'",
+                "moreInfo": "Task exist in both 'Unity.Task' and 'netstandard', or any conflict between internal unity dlls and dotnet dlls",
+                "solutions": ["Remove folder named 'Parse' that created by some google shitty plugin"],
+                "link": "https://github.com/googlesamples/google-signin-unity/issues/113#issuecomment-536920994"
+            }
+        ],
         "problems": [
             {
                 "section": "Package Manager",
