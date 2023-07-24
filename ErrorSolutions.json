@@ -36,6 +36,12 @@
                 "moreInfo": "Task exist in both 'Unity.Task' and 'netstandard', or any conflict between internal unity dlls and dotnet dlls",
                 "solutions": ["Remove folder named 'Parse' that created by some google shitty plugin"],
                 "link": "https://github.com/googlesamples/google-signin-unity/issues/113#issuecomment-536920994"
+            },
+            {
+                "message": "Building Library\\Bee\\artifacts\\Android\\iz17e\\libil2cpp.so failed",
+                "moreInfo": "C:/Program Files/Unity/Hub/Editor/2021.3.12f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin\\ld.gold.exe: error: Library/Bee/artifacts/Android/iz17e/rgm7_ly-CSharp8.o: multiple definition of 'PersistentStorage_CanAccessFiles_mFD53D45F2A0B64DA1CF6F1796203A5154F109AC2'",
+                "solutions": ["couldn't find solution, C++ compiler configuration was on release and changing it to master just changed the error after 23 min of build time, change it back to release somehow solved problem"],
+                "link": "https://issuetracker.unity3d.com/issues/il2cpp-android-build-failure-when-building-project-with-toolbuddy-asset-and-il2cpp-scripting-backend-selected"
             }
         ],
         "problems": [
