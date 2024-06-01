@@ -66,6 +66,10 @@
                 "message": "Error: Cannot perform an interactive login from a non TTY device",
                 "solutions": ["Add 'gitlab-deploy-token' to as a repository 'Deploy Token'"],
             },
+            {
+                "message": "unknown blob",
+                "solutions": ["Add 'registry['env'] = { \"REGISTRY_HTTP_RELATIVEURLS\" => true }' to envronmnet section of your gitlab docker compose"],
+            }
         ]
     ]
 }
