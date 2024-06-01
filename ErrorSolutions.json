@@ -59,5 +59,13 @@
                 "solutions": ["you are modifying a collection in foreach (removing an item in foreach on list of items). use \".ToList()\" on foreach definition part : \n`foreach (var item in items.ToList())`"]
             }
         ]
-    }
+    },
+    "gitlab-runner": [
+        "errors": [
+            {
+                "message": "Error: Cannot perform an interactive login from a non TTY device",
+                "solutions": ["Add 'gitlab-deploy-token' to as a repository 'Deploy Token'"],
+            },
+        ]
+    ]
 }
