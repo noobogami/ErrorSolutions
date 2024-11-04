@@ -60,16 +60,21 @@
             }
         ]
     },
-    "gitlab-runner": [
+    "gitlab-runner": {
         "errors": [
             {
                 "message": "Error: Cannot perform an interactive login from a non TTY device",
-                "solutions": ["Add 'gitlab-deploy-token' to as a repository 'Deploy Token'"],
+                "solutions": ["Add 'gitlab-deploy-token' to as a repository 'Deploy Token'"]
             },
             {
                 "message": "unknown blob",
-                "solutions": ["Add 'registry['env'] = { \"REGISTRY_HTTP_RELATIVEURLS\" => true }' to envronmnet section of your gitlab docker compose"],
+                "solutions": ["Add 'registry['env'] = { \"REGISTRY_HTTP_RELATIVEURLS\" => true }' to envronmnet section of your gitlab docker compose"]
+            },
+            {
+                "message": "remote: HTTP Basic: Access denied",
+                "solutions": ["add `clone_url = \"url\" to runner config`"],
+                "link": "https://stackoverflow.com/questions/72381700/gitlab-pipeline-failing-remote-http-basic-access-denied"
             }
         ]
-    ]
+    }
 }
